@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ComercioElectronico | CiudadFantasma</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<!-- Traea 3 Comentario - CiudadFantasma -->
+<!-- Echa por Pablo TKR -->
+
+<body>
+    <header>
+        <div class="textos">
+            <h1 class="titulo">Comercio </h1>
+            <h3 class="subtitulo">Electronico </h3>
+            <a href="https://www.youtube.com/watch?v=tLlRCmgySwQ" target="_blank" class="boton">Video</a>
+        </div>
+        <div class="sesgoabajo"></div>
+    </header>
+    <main>
+        <section class="acerca-de">
+            <div class="contenedor">
+                <h2 class="sobre-nosotros">Comentario Sobre El Video</h2>
+                <h3 class="slogan">Ciudad Fantasma - Detroit</h3>
+                <p class="parrafo">Lo que pude apreciar en el video fue que la ciudad de Detroit, tubo en su momento
+                                   un auge economico muy bueno, donde las fabricas y produccion en masa eran el pan de cada día.
+                                   No me imagino que durante esos años de gloria habira nececidad economica. Sin embargo.</p>
+                <p class="parrafo">Donde hubo millones de servicios y auge economico, se perdio, dejo de existir debido a diversos factores,
+                                    como el de la competencia contra las industrias japonesas y el aumento del crudo fueron vulnerando
+                                    a las fabricas, aunado a esto el problema y abuso con las sustancias prohibidad fue en aumento.
+                                    Todo esto destruyo a la sociedad en y hasta el momento se concidera a Detroit como un lugar...<br><br><center><b><em>"Donde
+                                    los jovenes tendrán que hacer la diferencia, para que su cuidad prospere." </b></em></p>
+                <a href="#" class="boton">Suscribete</a></center>
+            </div>
+        </section>
+        <section class="galeria">
+            <div class="sesgoarriba"></div>
+            <div class="imagenes none">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="imagenes">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="imagenes">
+                <img src="3.jfif" alt="">
+                <div class="encima">
+                    <h2>Detroit</h2>
+                    <div></div>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="4.jfif" alt="">
+
+            </div>
+            <div class="imagenes none">
+                <img src="5.jfif" alt="">
+            </div>
+            <div class="sesgoabajo"></div>
+        </section>
+        <section class="miembros">
+            <div class="contenedor">
+                <h2 class="sobre-nosotros">Recomendaciones</h2>
+                <h3 class="slogan">Para los amigos de detroit, la solución la tienen los jovenes.</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="A.jfif" alt="">
+                        <h4>Trabajo En Equipo</h4>
+                        <p>Fundamental para que los jovenes logren el objetivo. </p>
+                    </div>
+                    <div class="card">
+                        <img src="B.Jpg" alt="">
+                        <h4>Cocechar Para </h4>
+                        <p>La alimentación y cuidado al ambiente es escencial.</p>
+                    </div>
+                    <div class="card">
+                        <img src="C.png" alt="">
+                        <h4>Usar Tecnologia</h4>
+                        <p>Comenzar a desarrollarse con la tecnologia actualizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fondo">
+            <div class="sesgoarriba"></div>
+            <div class="contenedor">
+                <h2 class="titulo-patrocinadores">¿Que Le Paso A La Ciudad Industrial De Detroit?</h2>
+                <h3 class="subtitulo-patrocinadores">Fue una concecuencia de varios acontecimientos.                                                    </h3>
+                <div class="clientes">
+                    <div class="cliente">
+                        <img src="Ambicion.png" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img src="drogas3.png" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img src="golpe.gif" alt="">
+                    </div>
+                </div>
+                <marquee class="marquee" bgcolor="Black" behaivor="alternate" direccion:"right">
+                <b><font color="WHITE" size="25"> !!! Ambición 💵 - Abuso De Sustancias malas 💉 & Falta de interes En Actualizarse 🖥 📡¡¡</font> <b>
+                </marquee>
+                <h3 class="subtitulo-patrocinadores especial">Todos estos factores influyeron para que detroit industrial muriera.💀</h3>
+            </div>
+            <div class="sesgoabajo-unico"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <h2 class="titulo-footer">Gracias por su atención</h2><br>
+            <h3 class="subtitulo-footer">BY: Nava Paredes Jun Pablo</h3>
+            <div class="footer">
+
+<center><canvas id="canvas" width="400" height="400"
+style="background-color:#FE2E9A">
+</canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script></center>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
